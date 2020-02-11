@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* thema */
+.otoasobi {
+  top: 2.6%;
+  left: 1.3%;
+  width: 6.7%;
+  height: 11.8%;
+}
+
+.history {
+  top: 2.6%;
+  left: 9.4%;
+  width: 81.6%;
+  height: 11.8%;
+}
+
+.search {
+  top: 2.6%;
+  right: 0.9%;
+  width: 6.7%;
+  height: 11.8%;
+}
+
+.thema {
+  top: 18.2%;
+  left: 1.7%;
+  width: 11.3%;
+  height: 10.6%;
+}
+
+.stage {
+  top: 29%;
+  left: 1.7%;
+  width: 5.4%;
+  height: 9.8%;
+}
+
+.surface {
+  top: 29%;
+  left: 7.3%;
+  width: 5.7%;
+  height: 9.8%;
+}
+
+.auto-scroll {
+  top: 39.1%;
+  left: 1.7%;
+  width: 5.4%;
+  height: 9.8%;
+}
+
+.custom-scroll {
+  top: 39.1%;
+  left: 7.3%;
+  width: 5.7%;
+  height: 9.8%;
+}
+
+.timer {
+  top: 49.2%;
+  left: 1.7%;
+  width: 11.3%;
+  height: 10.5%;
+}
+
+.goal-condition {
+  top: 60.1%;
+  left: 1.7%;
+  width: 11.3%;
+  height: 10.5%;
+}
+
+.coop {
+  top: 72.6%;
+  left: 1.6%;
+  width: 5.4%;
+  height: 9.3%;
+}
+
+.afterimage {
+  top: 72.6%;
+  left: 7.9%;
+  width: 5.1%;
+  height: 9.3%;
+}
+
+.main-menu {
+  top: 17.5%;
+  right: 0.8%;
+  width: 7.1%;
+  height: 11.8%;
+}
+
+.save-load {
+  top: 29.5%;
+  right: 0.8%;
+  width: 7.1%;
+  height: 11.8%;
+}
+
+.eraser {
+  top: 59%;
+  right: 0.9%;
+  width: 7%;
+  height: 11.8%;
+}
+
+.undo {
+  top: 72.2%;
+  right: 0.9%;
+  width: 7%;
+  height: 11.8%;
+}
+
+.rocket {
+  top: 84.8%;
+  right: 0.9%;
+  width: 7%;
+  height: 11.8%;
+}
+
+.play {
+  top: 83.1%;
+  left: 1.2%;
+  width: 10.1%;
+  height: 15%;
+}
+
+.start-goal-position {
+  top: 84.9%;
+  left: 11%;
+  width: 4.3%;
+  height: 7.9%;
+}
+
+.start-goal-position .cursor-elm {
+  width: 16px;
+  padding-top: 16px;
+}
+
+.start {
+  top: 89.7%;
+  left: 17.2%;
+  width: 4.3%;
+  height: 7.7%;
+}
+
+.start .cursor-elm {
+  width: 16px;
+  padding-top: 16px;
+}
+
+.current-position {
+  top: 90.8%;
+  left: 21.9%;
+  width: 5%;
+  height: 5.5%;
+}
+
+.current-position .cursor-elm {
+  width: 12px;
+  padding-top: 12px;
+}
+
+.goal {
+  top: 89.7%;
+  left: 38.6%;
+  width: 4.3%;
+  height: 7.7%;
+}
+
+.goal .cursor-elm {
+  width: 16px;
+  padding-top: 16px;
+}
+
+.area-switch {
+  top: 89.3%;
+  left: 77.35%;
+  width: 5.7%;
+  height: 8.3%;
+}
+
+.area-switch .cursor-elm {
+  width: 16px;
+  padding-top: 16px;
+}
+
+.course-direction {
+  top: 89.3%;
+  left: 83.5%;
+  width: 5.7%;
+  height: 8.3%;
+}
+
+.description-img-water-default {
+  vertical-align: -15%;
+}
+
+.description-img-start {
+  vertical-align: -20%;
+  padding: 0px 2px;
+}
+
+.description-img-goal {
+  vertical-align: -20%;
+  padding: 0px 2px;
+}

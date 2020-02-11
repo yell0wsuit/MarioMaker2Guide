@@ -1,0 +1,314 @@
+@charset "utf-8";
+/*------------------------------------------------------------------------------
+                                    font
+------------------------------------------------------------------------------*/
+
+/* --------------------------- SpecialFont -----------------------------------*/
+
+/* 半角（全角）英数字記号 */
+
+@font-face {
+  font-family: "SpecialFont";
+  src: url("../font/MARIOMAKER.woff") format("woff");
+  unicode-range: U+0020-024f, U+0391-03ff, U+0400-052f, U+3000-303F, U+FF00-FFEF;
+}
+
+/* かな 漢字 */
+
+@font-face {
+  font-family: "SpecialFont-ja";
+  src: url("../font/DF-SouGei-W7.woff") format("woff");
+  unicode-range: U+3040-309f, U+30a0-30ff, U+ff61-ff9f, U+4e00-9fd5;
+}
+
+/* 韓国語 */
+
+@font-face {
+  font-family: "SpecialFont-ko";
+  src: url("../font/AsiaKCOMC-R.woff") format("woff");
+  unicode-range: U+1100-11FF, U+2000-206F, U+2190-21FF, U+3001-3002, U+A960-A97F, U+D7B0-D7FF, U+3130-318F, U+AC00-D7AF;
+}
+
+/* 簡体字(zh-cn) */
+
+@font-face {
+  font-family: "SpecialFont-zh-cn";
+  src: url("../font/DFP_GBZY7.woff") format("woff");
+  unicode-range: U+2000-206F/* 一般句読点 */
+  , U+2190-21FF/* 矢印 */
+  , U+2E80-2EFF/* CJK部首補助 */
+  , U+2F00-2FDF/* 康煕部首 */
+  , U+2FF0-2FFF/* 漢字構成記述文字 */
+  , U+3001-3002/* 句読点 */
+  , U+3100-312F/* 注音字母 */
+  , U+31A0-31BF/* 注音字母拡張 */
+  , U+31C0-31EF/* CJKの筆画 */
+  , U+3400-4DB5/* CJK統合漢字拡張A */
+  , U+4E00-9FEA/* CJK統合漢字 */
+  , U+A000-A48F/* イ文字 */
+  , U+A490-A4CF/* イ文字部首 */
+  , U+A4D0-A4FF/* リス文字 */
+  , U+F900-FAFF/* CJK互換漢字 */
+  , U+16F00-16F9F/* ポラード文字 */
+  , U+17000-187EC/* 西夏文字 */
+  , U+18800-18AFF/* 西夏文字構成要素 */
+  , U+1B170-1B2FF/* 女書 */
+  , U+20000-2A6D6/* CJK統合漢字拡張B */
+  , U+2A700-2B734/* CJK統合漢字拡張C */
+  , U+2B740-2B81D/* CJK統合漢字拡張D */
+  , U+2B820-2CEA1/* CJK統合漢字拡張E */
+  , U+2CEB0-2EBE0/* CJK統合漢字拡張F */
+  , U+2F800-2FA1F/* CJK互換漢字補助 */
+  , U+E0100-E01EF/* 異体字セレクタ補助 */
+  ;
+}
+
+/* 繁体字(zh-tw) */
+
+@font-face {
+  font-family: "SpecialFont-zh-tw";
+  src: url("../font/DFPT_ZY7.woff") format("woff");
+  unicode-range: U+2000-206F/* 一般句読点 */
+  , U+2190-21FF/* 矢印 */
+  , U+2E80-2EFF/* CJK部首補助 */
+  , U+2F00-2FDF/* 康煕部首 */
+  , U+2FF0-2FFF/* 漢字構成記述文字 */
+  , U+3001-3002/* 句読点 */
+  , U+3100-312F/* 注音字母 */
+  , U+31A0-31BF/* 注音字母拡張 */
+  , U+31C0-31EF/* CJKの筆画 */
+  , U+3400-4DB5/* CJK統合漢字拡張A */
+  , U+4E00-9FEA/* CJK統合漢字 */
+  , U+A000-A48F/* イ文字 */
+  , U+A490-A4CF/* イ文字部首 */
+  , U+A4D0-A4FF/* リス文字 */
+  , U+F900-FAFF/* CJK互換漢字 */
+  , U+16F00-16F9F/* ポラード文字 */
+  , U+17000-187EC/* 西夏文字 */
+  , U+18800-18AFF/* 西夏文字構成要素 */
+  , U+1B170-1B2FF/* 女書 */
+  , U+20000-2A6D6/* CJK統合漢字拡張B */
+  , U+2A700-2B734/* CJK統合漢字拡張C */
+  , U+2B740-2B81D/* CJK統合漢字拡張D */
+  , U+2B820-2CEA1/* CJK統合漢字拡張E */
+  , U+2CEB0-2EBE0/* CJK統合漢字拡張F */
+  , U+2F800-2FA1F/* CJK互換漢字補助 */
+  , U+E0100-E01EF/* 異体字セレクタ補助 */
+  ;
+}
+
+.f-special {
+  font-family: "SpecialFont";
+}
+
+.f-special span {
+  font-size: 1.2em;
+  vertical-align: -0.078em;
+}
+
+/* 日本語 */
+
+.f-special:lang(ja) {
+  font-family: "SpecialFont-ja", "SpecialFont";
+}
+
+.f-special:lang(ja) span {
+  font-size: 1em;
+  vertical-align: 0em;
+}
+
+.f-special:lang(ja) al {
+  font-size: 1.2em;
+  vertical-align: -0.078em;
+}
+
+/* 韓国語 */
+
+.f-special:lang(ko) {
+  font-family: "SpecialFont-ko", "SpecialFont";
+}
+
+.f-special:lang(ko) span {
+  font-size: 1em;
+  vertical-align: 0em;
+}
+
+.f-special:lang(ko) al {
+  font-size: 1.3em;
+  vertical-align: -0.125em;
+}
+
+/* 中国語(簡体字) */
+
+.f-special:lang(zh-cn) {
+  font-family: "SpecialFont-zh-cn", "SpecialFont";
+}
+
+.f-special:lang(zh-cn) span {
+  font-size: 1em;
+  vertical-align: 0em;
+}
+
+.f-special:lang(zh-cn) al {
+  font-size: 1.16em;
+  vertical-align: -0.07em;
+}
+
+/* 中国語(繁体字) */
+
+.f-special:lang(zh-tw) {
+  font-family: "SpecialFont-zh-tw", "SpecialFont";
+}
+
+.f-special:lang(zh-tw) span {
+  font-size: 1em;
+  vertical-align: 0em;
+}
+
+.f-special:lang(zh-tw) al {
+  font-size: 1.16em;
+  vertical-align: -0.101em;
+}
+
+/* --------------------------- MessageFont -----------------------------------*/
+
+/* 半角英数字 */
+
+@font-face {
+  font-family: "MessageFont";
+  src: url("../font/ninP_UDKakugoSmall-DB_003.woff") format("woff");
+  unicode-range: U+0020-024f, U+0391-03ff, U+0400-052f, U+3000-303F, U+FF00-FFEF;
+}
+
+/* かな 漢字 */
+
+@font-face {
+  font-family: "MessageFont-ja";
+  src: url("../font/DF-UDGothic-W6.woff") format("woff");
+  unicode-range: U+3040-309f, U+30a0-30ff, U+ff61-ff9f, U+4e00-9fd5;
+}
+
+/* 韓国語 */
+
+@font-face {
+  font-family: "MessageFont-ko";
+  src: url("../font/AsiaKDREAM4-R.woff") format("woff");
+  unicode-range: U+1100-11FF, U+2000-206F, U+2190-21FF, U+3001-3002, U+A960-A97F, U+D7B0-D7FF, U+3130-318F, U+AC00-D7AF;
+}
+
+/* 簡体字(zh-cn) */
+
+@font-face {
+  font-family: "MessageFont-zh-cn";
+  src: url("../font/DFHEI5A.woff") format("woff");
+  unicode-range: U+2000-206F/* 一般句読点 */
+  , U+2190-21FF/* 矢印 */
+  , U+2E80-2EFF/* CJK部首補助 */
+  , U+2F00-2FDF/* 康煕部首 */
+  , U+2FF0-2FFF/* 漢字構成記述文字 */
+  , U+3001-3002/* 句読点 */
+  , U+3100-312F/* 注音字母 */
+  , U+31A0-31BF/* 注音字母拡張 */
+  , U+31C0-31EF/* CJKの筆画 */
+  , U+3400-4DB5/* CJK統合漢字拡張A */
+  , U+4E00-9FEA/* CJK統合漢字 */
+  , U+A000-A48F/* イ文字 */
+  , U+A490-A4CF/* イ文字部首 */
+  , U+A4D0-A4FF/* リス文字 */
+  , U+F900-FAFF/* CJK互換漢字 */
+  , U+16F00-16F9F/* ポラード文字 */
+  , U+17000-187EC/* 西夏文字 */
+  , U+18800-18AFF/* 西夏文字構成要素 */
+  , U+1B170-1B2FF/* 女書 */
+  , U+20000-2A6D6/* CJK統合漢字拡張B */
+  , U+2A700-2B734/* CJK統合漢字拡張C */
+  , U+2B740-2B81D/* CJK統合漢字拡張D */
+  , U+2B820-2CEA1/* CJK統合漢字拡張E */
+  , U+2CEB0-2EBE0/* CJK統合漢字拡張F */
+  , U+2F800-2FA1F/* CJK互換漢字補助 */
+  , U+E0100-E01EF/* 異体字セレクタ補助 */
+  ;
+}
+
+/* 繁体字(zh-tw) */
+
+@font-face {
+  font-family: "MessageFont-zh-tw";
+  src: url("../font/DFPT_C5.woff") format("woff");
+  unicode-range: U+2000-206F/* 一般句読点 */
+  , U+2190-21FF/* 矢印 */
+  , U+2E80-2EFF/* CJK部首補助 */
+  , U+2F00-2FDF/* 康煕部首 */
+  , U+2FF0-2FFF/* 漢字構成記述文字 */
+  , U+3001-3002/* 句読点 */
+  , U+3100-312F/* 注音字母 */
+  , U+31A0-31BF/* 注音字母拡張 */
+  , U+31C0-31EF/* CJKの筆画 */
+  , U+3400-4DB5/* CJK統合漢字拡張A */
+  , U+4E00-9FEA/* CJK統合漢字 */
+  , U+A000-A48F/* イ文字 */
+  , U+A490-A4CF/* イ文字部首 */
+  , U+A4D0-A4FF/* リス文字 */
+  , U+F900-FAFF/* CJK互換漢字 */
+  , U+FF0C/* コンマ */
+  , U+16F00-16F9F/* ポラード文字 */
+  , U+17000-187EC/* 西夏文字 */
+  , U+18800-18AFF/* 西夏文字構成要素 */
+  , U+1B170-1B2FF/* 女書 */
+  , U+20000-2A6D6/* CJK統合漢字拡張B */
+  , U+2A700-2B734/* CJK統合漢字拡張C */
+  , U+2B740-2B81D/* CJK統合漢字拡張D */
+  , U+2B820-2CEA1/* CJK統合漢字拡張E */
+  , U+2CEB0-2EBE0/* CJK統合漢字拡張F */
+  , U+2F800-2FA1F/* CJK互換漢字補助 */
+  , U+E0100-E01EF/* 異体字セレクタ補助 */
+  ;
+}
+
+.f-message {
+  font-family: "MessageFont";
+}
+
+/* 日本語 */
+
+.f-message:lang(ja) {
+  font-family: "MessageFont-ja", "MessageFont";
+}
+
+.f-message:lang(ja) al {
+  font-size: 1.06em;
+  vertical-align: -0.03em;
+}
+
+/* 韓国語 */
+
+.f-message:lang(ko) {
+  font-family: "MessageFont-ko", "MessageFont";
+}
+
+.f-message:lang(ko) al {
+  font-size: 1.08em;
+  vertical-align: -0.095em;
+}
+
+/* 中国語(簡体字) */
+
+.f-message:lang(zh-cn) {
+  font-family: "MessageFont-zh-cn", "MessageFont";
+}
+
+.f-message:lang(zh-cn) al {
+  font-size: 0.995em;
+  vertical-align: -0.025em;
+}
+
+/* 中国語(繁体字) */
+
+.f-message:lang(zh-tw) {
+  font-family: "MessageFont-zh-tw", "MessageFont";
+}
+
+.f-message:lang(zh-tw) al {
+  font-size: 1em;
+  vertical-align: -0.077em;
+}

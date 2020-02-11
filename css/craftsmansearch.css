@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* thema */
+.like-ranking {
+  top: 11.9%;
+  left: 0%;
+  width: 29.5%;
+  height: 9%;
+}
+
+.course-ranking {
+  top: 11.9%;
+  left: 29.6%;
+  width: 29.6%;
+  height: 9%;
+}
+
+.battle-mode {
+  top: 11.9%;
+  left: 59.4%;
+  width: 29.6%;
+  height: 9%;
+}
+
+.favorite {
+  top: 11.9%;
+  right: 0%;
+  width: 10.9%;
+  height: 9%;
+}
+
+.craftsman-detail {
+  top: 26.8%;
+  left: 16%;
+  width: 70.4%;
+  height: 12.8%;
+}

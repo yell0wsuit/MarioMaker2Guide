@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* thema */
+.coop {
+  top: 42.5%;
+  left: 16%;
+  width: 30.5%;
+  height: 11%;
+}
+
+.battle-mode {
+  top: 74.8%;
+  left: 16%;
+  width: 30.5%;
+  height: 10.8%;
+}
+
+.create-room {
+  top: 42.5%;
+  left: 52.8%;
+  width: 32%;
+  height: 11%;
+}
+
+.search-room {
+  top: 74.8%;
+  left: 52.8%;
+  width: 32%;
+  height: 10.8%;
+}
+
+.play-list {
+  bottom: 2.6%;
+  left: 72.8%;
+  width: 5.3%;
+  height: 9.4%;
+}
+
+.change-message {
+  bottom: 2.6%;
+  right: 3.4%;
+  width: 5.4%;
+  height: 9.4%;
+}

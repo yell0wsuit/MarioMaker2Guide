@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* thema */
+.action {
+  top: 40.4%;
+  left: 21.5%;
+  width: 15.1%;
+  height: 6.5%;
+}
+
+.parts {
+  top: 40.4%;
+  left: 36.55%;
+  width: 15.3%;
+  height: 6.5%;
+}
+
+.player {
+  top: 40.4%;
+  left: 51.9%;
+  width: 15.2%;
+  height: 6.5%;
+}
+
+.none {
+  top: 40.4%;
+  left: 67%;
+  width: 15.2%;
+  height: 6.5%;
+}
+
+.cursor-elm {
+  width: 12%;
+  padding-top: 12%;
+}

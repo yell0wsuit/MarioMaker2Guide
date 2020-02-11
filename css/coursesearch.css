@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* thema */
+.hope {
+  top: 12.2%;
+  left: 0%;
+  width: 22.4%;
+  height: 8.8%;
+}
+
+.ranking {
+  top: 12.2%;
+  left: 22.5%;
+  width: 22.3%;
+  height: 8.8%;
+}
+
+.new {
+  top: 12.2%;
+  left: 44.9%;
+  width: 22.2%;
+  height: 8.8%;
+}
+
+.detail-search {
+  top: 12.2%;
+  left: 67.3%;
+  width: 22.3%;
+  height: 8.8%;
+}
+
+.timeline {
+  top: 12.2%;
+  right: 0%;
+  width: 10.3%;
+  height: 8.8%;
+}
+
+.show-detail {
+  top: 75.3%;
+  left: 38%;
+  width: 21.8%;
+  height: 7.4%;
+}
+
+.show-detail .cursor-elm {
+  width: 18px;
+  padding-top: 18px;
+}
+
+.report {
+  top: 89.3%;
+  left: 19%;
+  width: 9.9%;
+  height: 6.5%;
+}
+
+.report .cursor-elm {
+  width: 15px;
+  padding-top: 15px;
+}
+
+.save {
+  top: 84.5%;
+  left: 38%;
+  width: 21.7%;
+  height: 11.3%;
+}
+
+.play {
+  top: 84.5%;
+  left: 60.8%;
+  width: 21.8%;
+  height: 11.3%;
+}
+
+.comment {
+  top: 75.3%;
+  left: 60.8%;
+  width: 21.8%;
+  height: 7.4%;
+}
+
+.comment .cursor-elm {
+  width: 18px;
+  padding-top: 18px;
+}

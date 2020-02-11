@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* thema */
+.cursor-elm {
+  width: 18px;
+  padding-top: 18px;
+}
+
+.my-course {
+  top: 13.9%;
+  left: 12.5%;
+  width: 37.6%;
+  height: 8.4%;
+}
+
+.play-after {
+  top: 13.9%;
+  left: 50%;
+  width: 37.5%;
+  height: 8.4%;
+}

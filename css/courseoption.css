@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/* thema */
+.control-option {
+  top: 16.5%;
+  left: 13.9%;
+  width: 34.8%;
+  height: 31%;
+}
+
+.character {
+  top: 16.5%;
+  left: 51.4%;
+  width: 34.8%;
+  height: 15.2%;
+}
+
+.display-comment {
+  top: 31.8%;
+  left: 51.4%;
+  width: 34.8%;
+  height: 15.7%;
+}
+
+.play-notification {
+  top: 47.6%;
+  left: 13.9%;
+  width: 34.8%;
+  height: 15.8%;
+}
+
+.realtime-notification {
+  top: 47.6%;
+  left: 51.4%;
+  width: 34.8%;
+  height: 15.9%;
+}
+
+.tag-lock {
+  top: 63.4%;
+  left: 51.4%;
+  width: 34.8%;
+  height: 16.4%;
+}
+
+.comment-lock {
+  top: 63.4%;
+  left: 13.9%;
+  width: 34.8%;
+  height: 16.4%;
+}
+
+.cursor-elm {
+  width: 10%;
+  padding-top: 10%;
+}
+
+.character .cursor-elm {
+  width: 8%;
+  padding-top: 8%;
+}

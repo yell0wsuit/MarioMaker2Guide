@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* thema */
+.parts {
+  top: 2.5%;
+  left: 32.5%;
+  width: 57.5%;
+  height: 18.2%;
+}
+
+.parts .cursor-elm {
+  width: 6%;
+  padding-top: 6%;
+}
+
+.ring {
+  top: 23.8%;
+  left: 30.8%;
+  width: 38.3%;
+  height: 67.5%;
+}
+
+.ring .cursor-elm {
+  width: 10%;
+  padding-top: 10%;
+}

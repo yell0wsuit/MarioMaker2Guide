@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* thema */
+.cursor-elm {
+  width: 10%;
+  padding-top: 10%;
+}
+
+.player-info {
+  top: 10.8%;
+  left: 3.7%;
+  width: 20.7%;
+  height: 7.7%;
+}
+
+.submitted-course {
+  top: 10.8%;
+  left: 24.3%;
+  width: 20.8%;
+  height: 7.7%;
+}
+
+.liked-course {
+  top: 10.8%;
+  left: 45.2%;
+  width: 20.7%;
+  height: 7.7%;
+}
+
+.played-course {
+  top: 10.8%;
+  left: 66%;
+  width: 20.7%;
+  height: 7.7%;
+}
+
+.fastest-cleared-course {
+  top: 10.8%;
+  left: 86.9%;
+  width: 9.5%;
+  height: 7.7%;
+}
+
+.fastest-cleared-course .cursor-elm {
+  width: 20%;
+  padding-top: 20%;
+}
+
+.like-point {
+  top: 20.7%;
+  right: 5%;
+  width: 38%;
+  height: 17.5%;
+}
+
+.medal {
+  top: 40.2%;
+  right: 5%;
+  width: 38%;
+  height: 32.8%;
+}
+
+.rate {
+  top: 73%;
+  right: 5%;
+  width: 38%;
+  height: 20.8%;
+}
+
+.detail-info {
+  left: 6.1%;
+  bottom: 5.8%;
+  width: 50.3%;
+  height: 72.6%;
+}
