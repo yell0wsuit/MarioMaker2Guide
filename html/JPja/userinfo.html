@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="ja-JP">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/userinfo.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/userinfo_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button player-info">
+            <a id="btn-player-info" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button submitted-course">
+            <a id="btn-submitted-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button liked-course">
+            <a id="btn-liked-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button played-course">
+            <a id="btn-played-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button fastest-cleared-course">
+            <a id="btn-fastest-cleared-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button like-point">
+            <a id="btn-like-point" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button medal">
+            <a id="btn-medal" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button rate">
+            <a id="btn-rate" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button detail-info">
+            <a id="btn-detail-info" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keyfocus('btn-like-point', 'right')" nx-se-disabled="">
+            </a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper world-network">
+        <div id="about-player-info" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-1">プレイ情報</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">今まであそんだ記録が見られます。</span></div>
+          </div>
+        </div>
+        <div id="about-submitted-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-3">とうこうしたコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-4">とうこうしたコースのリストです。<br />コースを選ぶと、他の人からあそばれた情報が見られます。</span></div>
+          </div>
+        </div>
+        <div id="about-liked-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-5">いいね！したコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">自分が「いいね！」したコースのリストです。<br />コースを選んで、あそんだり、ダウンロードしたりできます。</span></div>
+          </div>
+        </div>
+        <div id="about-played-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-7">あそんだコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-8">自分があそんだコースのリストです。</span></div>
+          </div>
+        </div>
+        <div id="about-fastest-cleared-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-9">いちばんはやくクリアしたコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-10">自分がベストタイムを持っているコースのリストです。<br />誰かに記録を抜かれたら、リストから消えます。</span></div>
+          </div>
+        </div>
+        <div id="about-like-point" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-13">コース職人ポイント</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-14">とうこうしたコースが、たくさん「いいね！」されると上がるポイントです。</span></div>
+          </div>
+        </div>
+        <div id="about-medal" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-15">持っているメダル</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-16">ランキングの上位に入ると、メダルがもらえます。</span></div>
+          </div>
+        </div>
+        <div id="about-rate" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-17">バトルレート</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-18">バトルレートは、「通信であそぶ」の「みんなでバトル」の勝敗で上下します。</span></div>
+          </div>
+        </div>
+        <div id="about-detail-info" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-19">くわしく見る</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-20">職人のIDや今まであそんだ記録が見られます。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+      <div class="l-character-footer-img">
+        <img id="yamamura-footer-img" class="yamamura-footer-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/UFO.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="prev-scene-text"><span data-msgcom="true" data-msgid="textbox_id-10002">世界のコース</span></p>
+          <p class="triangle"><span data-msgcom="true" data-msgid="textbox_id-10006">&#9654;</span></p>
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10008">職人情報</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-20 --></body>
+
+</html>

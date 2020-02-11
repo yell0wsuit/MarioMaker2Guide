@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="ja-JP">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/courserobot.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/courserobot_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button my-course">
+            <a id="btn-my-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./mycourse.html" nx-se-disabled="" data-counter-id="13"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button play-after">
+            <a id="btn-play-after" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-to-detail">
+    <a id="to-detail" tabindex="-1" class="to-detail-wrapper" href="javascript:void(0);" onclick="gotoDetail(this)" ontouchstart="touchStartToDetail()" nx-se-disabled="">
+      <div id="to-detail-balloon" class="to-detail-balloon">
+        <div class="balloon-detail-border">
+          <div class="balloon-detail-inner">
+            <div class="balloon-triangle-border">
+              <div class="balloon-triangle-inner"></div>
+            </div>
+            <div class="detail-text f-message">
+              <div id="key-A" class="key-text"></div>
+              <div class="balloon-text"><span data-msgcom="true" data-msgid="textbox_id-10016">ポポ…<br />(くわしく)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character-img-wrapper">
+        <img id="yamamura-img" class="yamamura-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper course-robot">
+        <div id="about-my-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10013">自分のコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">セーブした自分のコースが見られます。</span></div>
+          </div>
+        </div>
+        <div id="about-play-after" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10014">ダウンロードしたコース</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-5">「世界のコース」からダウンロードしたコースが見られます。<br />インターネットに接続していなくてもあそべます。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/robot.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10003">コースロボット</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-10015 --></body>
+
+</html>

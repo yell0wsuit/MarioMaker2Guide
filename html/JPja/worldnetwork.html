@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="ja-JP">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/worldnetwork.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/worldnetwork_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button id-search">
+            <a id="btn-id-search" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button course-search">
+            <a id="btn-course-search" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./coursesearch.html" nx-se-disabled="" data-counter-id="9"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button craftsman-search">
+            <a id="btn-craftsman-search" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./craftsmansearch.html" nx-se-disabled="" data-counter-id="10"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button play-everyone">
+            <a id="btn-play-everyone" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./playingeveryone.html" nx-se-disabled="" data-counter-id="11"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button challenge">
+            <a id="btn-challenge" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./mariochallenge.html" nx-se-disabled="" data-counter-id="12"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button user-info">
+            <a id="btn-user-info" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./userinfo.html" nx-se-disabled="" data-counter-id="8"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button mii">
+            <a id="btn-mii" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-to-detail">
+    <a id="to-detail" tabindex="-1" class="to-detail-wrapper" href="javascript:void(0);" onclick="gotoDetail(this)" ontouchstart="touchStartToDetail()" nx-se-disabled="">
+      <div id="to-detail-balloon" class="to-detail-balloon">
+        <div class="balloon-detail-border">
+          <div class="balloon-detail-inner">
+            <div class="balloon-triangle-border">
+              <div class="balloon-triangle-inner"></div>
+            </div>
+            <div class="detail-text f-message">
+              <div id="key-A" class="key-text"></div>
+              <div class="balloon-text"><span data-msgcom="true" data-msgid="textbox_id-10016">ポポ…<br />(くわしく)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character-img-wrapper">
+        <img id="yamamura-img" class="yamamura-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper world-network">
+        <div id="about-id-search" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-22">IDでさがす</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-23">IDを入力して、コースや職人をさがせます。</span></div>
+          </div>
+        </div>
+        <div id="about-course-search" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10009">コースをさがす</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">いろんなじょうけんでコースをさがせます。</span></div>
+          </div>
+        </div>
+        <div id="about-craftsman-search" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10010">職人ランキング</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-9">いろいろな職人のランキングを見られます。</span></div>
+          </div>
+        </div>
+        <div id="about-play-everyone" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10011">通信であそぶ</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div>
+              <div class="description-text f-message"><span data-msgid="textbox_id-12">世界の人や近くの人と一緒にコースをあそべます。</span></div>
+              <div class="description-attention f-message"><span data-msgid="textbox_id-16">※最大4人まであそべます。</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="about-challenge" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10012">どこまでマリオチャレンジ</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-15">マリオの数が0になるまで、いくつコースをクリアできるかチャレンジします。</span></div>
+          </div>
+        </div>
+        <div id="about-user-info" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10008">職人情報</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-18">自分のプレイ情報などが見られます。</span></div>
+          </div>
+        </div>
+        <div id="about-mii" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-20">職人</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-21">着せかえをしたり、顔や名前を変えたりできます。</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/UFO.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10002">世界のコース</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-10012 --></body>
+
+</html>

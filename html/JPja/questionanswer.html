@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="ja-JP">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/questionanswer.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/questionanswer.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_qa.webp" class="bg-img" />
+  </div>
+  <div class="l-main-content">
+    <div id="main-description" class="l-qa-content">
+      <div class="qa find-course-id">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_id.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-2">コースの<al>ID</al>を知りたいです</span></div>
+        </div>
+        <div class="answer">
+          <div class="answer-set">
+            <div class="answer-message-wrapper">
+              <div class="f-message"><span data-msgid="textbox_id-3">「世界のコース」でコースを選ぶと<br />かくにんできます。</span></div>
+            </div>
+            <div class="answer-img-wrapper">
+              <div class="answer-balloon">
+                <div class="answer-img-triangle"></div>
+                <img class="answer-img-balloon" src="./img/questionanswer_00b.webp" />
+              </div>
+              <img class="answer-img" src="./img/questionanswer_00a.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qa find-craftsman-id">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_id.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-4">職人の<al>ID</al>を知りたいです</span></div>
+        </div>
+        <div class="answer">
+          <div class="answer-set">
+            <div class="answer-message-wrapper">
+              <div class="f-message"><span data-msgid="textbox_id-5">職人情報で職人を選ぶとかくにんできます。</span></div>
+            </div>
+            <div class="answer-img-wrapper">
+              <div class="answer-balloon">
+                <div class="answer-img-triangle"></div>
+                <img class="answer-img-balloon" src="./img/questionanswer_01b.webp" />
+              </div>
+              <img class="answer-img" src="./img/questionanswer_01a.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_follow.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-6">気にいった職人をフォローするには<al>？</al></span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-7">職人情報で<img data-ms="true" class="answer-message-icon" src="../../img/icon_follow_insertion.webp" />を選んでフォローします。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_follow.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-8">友達のつくったコースをあそぶには<al>？</al></span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-9">友達のIDを教えてもらって友達をフォローしましょう。<br />フォローすると、「コースをさがす」の<img data-ms="true" class="answer-message-icon" src="../../img/icon_timeline.webp" />や「職人ランキング」の<img data-ms="true" class="answer-message-icon" src="../../img/icon_followlist.webp" />からあそべます。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_tag.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-10">タグってなんですか<al>？</al></span></div>
+        </div>
+        <div class="answer">
+          <div class="answer-set">
+            <div class="answer-message-wrapper">
+              <div class="f-message"><span data-msgid="textbox_id-11">タグは なぞとき/タイムアタック など、コースの<br />種類をあらわします。<br />タグを設定しておくと、コースをさがす時の目安<br />になります。とうこうしたコースのタグを他の人<br />に変えられたくない時は、オプションで<br />「自分のコースのタグ」を「ロックする」にして<br />おきましょう。</span></div>
+            </div>
+            <div class="answer-img-wrapper">
+              <img class="answer-img" src="./img/questionanswer_02a.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_comment.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-12">コメントってなんですか<al>？</al></span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-13">コースをあそんだ人がとうこうしたメッセージです。<br />コースをあそんでいる時にポップアップ表示されます。コース中やクリア後に、コースに対して<br />コメントをとうこうできます。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_comment.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-14">コースをあそんでいる時のコメント表示を消すには<al>？</al></span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-15">コースをあそんでいる時に<al></al>でポーズメニューを開きます。<br />「コメント表示」を<img data-ms="true" class="answer-message-icon" src="../../img/icon_hide.webp" />にすると表示を消せます。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_comment.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-16">自分がとうこうしたコースにコメントをつけてほしくないです</span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-17">オプションで「自分のコースへのコメント」を「許可しない」にします。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_comment.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-30">不適切なコメントを通報するには<al>？</al>
+</span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-31">コースを選び、「コメントを見る」から通報してください。<br />不適切な通報はしないでください。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_course.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-18">とうこうしたコースをサーバーから消すには<al>？</al></span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-19">自分の職人情報の「とうこうしたコース」で消せます。<br />本当に消していいかよく考えてから消しましょう。</span></div>
+      </div>
+      <div class="qa">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_course.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-20">とうこうしたコースが消えています</span></div>
+        </div>
+        <div class="answer f-message"><span data-msgid="textbox_id-21">とうこうしたコースは、不適切な言葉を含んでいるなどの理由で消されることがあります。<br />とうこうする時は、コース名やコースの説明などに注意してください。</span></div>
+      </div>
+      <div class="qa report-course">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_course.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-22">不適切なコースを通報するには<al>？</al></span></div>
+        </div>
+        <div class="answer">
+          <div class="answer-set">
+            <div class="answer-message-wrapper">
+              <div class="f-message"><span data-msgid="textbox_id-23">コースを選び、「通報」を選んでください。<br />不要な通報はしないでください。</span></div>
+            </div>
+            <div class="answer-img-wrapper">
+              <div class="answer-balloon">
+                <div class="answer-img-triangle"></div>
+                <img class="answer-img-balloon" src="./img/questionanswer_03b.webp" />
+              </div>
+              <img class="answer-img" src="./img/questionanswer_03a.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="qa report-craftsman">
+        <div class="question-wrapper">
+          <div class="icon-wrapper">
+            <img src="../../img/icon_craftsman.webp" class="icon" />
+          </div>
+          <div class="question f-special"><span data-msgid="textbox_id-24">不適切な職人の名前を通報するには<al>？</al></span></div>
+        </div>
+        <div class="answer">
+          <div class="answer-set">
+            <div class="answer-message-wrapper">
+              <div class="f-message"><span data-msgid="textbox_id-25">職人情報で職人を選び、「職人の名前の通報」<br />から通報してください。<br />不要な通報はしないでください。</span></div>
+            </div>
+            <div class="answer-img-wrapper">
+              <div class="answer-balloon">
+                <div class="answer-img-triangle"></div>
+                <img class="answer-img-balloon" src="./img/questionanswer_04b.webp" />
+              </div>
+              <img class="answer-img" src="./img/questionanswer_04a.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="scroll-indicator" class="l-scroll-indicator">
+      <div class="scroll-indicator-wrapper">
+        <img class="scroll-indicator" src="../../img/scroll.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="goBack()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <div class="f-special">
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10005"><al>Q&A</al></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-31 --></body>
+
+</html>

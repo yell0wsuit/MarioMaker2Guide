@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="ja-JP">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/top.css" />
+</head>
+
+<body>
+  <div id="bg" class="l-bg">
+    <img id="top-img-0" class="bg-img is-hidden" ref="../../img/top1.webp" />
+    <img id="top-img-1" class="bg-img is-hidden" ref="../../img/top2.webp" />
+    <img id="top-img-2" class="bg-img is-hidden" ref="../../img/top3.webp" />
+    <img id="top-img-3" class="bg-img is-hidden" ref="../../img/top4.webp" />
+    <img id="top-img-4" class="bg-img is-hidden" ref="../../img/top5.webp" />
+  </div>
+  <div class="show-after-font-loading">
+    <div class="l-header">
+      <h1 class="title-message f-special"><span data-msgid="textbox_id-1">あそびかたガイド</span></h1>
+    </div>
+    <div class="l-main-content">
+      <div class="l-menus">
+        <div class="l-menu">
+          <div class="button-border edit-course">
+            <a id="btn-edit-course" tabindex="0" href="javascript:void(0);" ref="./edit.html" class="cursor" onclick="selectBtn(this);switchPage(this)" onfocus="focusMenu(this)" onblur="defocusMenu(this)" onkeydown="keyfocus('btn-world-course', 'down')" nx-se-disabled="" data-counter-id="0"></a>
+            <div class="button-inner">
+              <div class="button-icon-wrapper">
+                <img src="../../img/hand.webp" class="button-icon" />
+              </div>
+              <div class="button-text edit-button-text f-special"><span data-msgcom="true" data-msgid="textbox_id-10000">コースをつくる</span></div>
+            </div>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+      <div class="l-menus l-middle-menus">
+        <div class="l-menu">
+          <div class="button-border world-course">
+            <a id="btn-world-course" tabindex="0" href="javascript:void(0);" ref="./worldnetwork.html" class="cursor" onclick="selectBtn(this);switchPage(this)" onfocus="focusMenu(this)" onblur="defocusMenu(this)" nx-se-disabled="" data-counter-id="1"></a>
+            <div class="button-inner">
+              <div class="button-icon-wrapper">
+                <img src="../../img/UFO.webp" class="button-icon" />
+              </div>
+              <div class="button-text f-special"><span data-msgcom="true" data-msgid="textbox_id-10002">世界のコース</span></div>
+            </div>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+        <div class="l-menu">
+          <div class="button-border course-robot">
+            <a id="btn-course-robot" tabindex="0" href="javascript:void(0);" ref="./courserobot.html" class="cursor" onclick="selectBtn(this);switchPage(this)" onfocus="focusMenu(this)" onblur="defocusMenu(this)" nx-se-disabled="" data-counter-id="2"></a>
+            <div class="button-inner">
+              <div class="button-icon-wrapper">
+                <img src="../../img/robot.webp" class="button-icon" />
+              </div>
+              <div class="button-text f-special"><span data-msgcom="true" data-msgid="textbox_id-10003">コースロボット</span></div>
+            </div>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+      <div class="l-menus">
+        <div class="l-sub-menu">
+          <div class="sub-button-border option">
+            <a id="btn-option" tabindex="0" href="javascript:void(0);" ref="./courseoption.html" class="cursor" onclick="selectBtn(this);switchPage(this)" onfocus="focusMenu(this)" onblur="defocusMenu(this)" nx-se-disabled="" data-counter-id="3"></a>
+            <div class="sub-button-inner">
+              <div class="option-icon-wrapper">
+                <img src="../../img/option.webp" class="option-icon" />
+              </div>
+              <div class="sub-button-text f-special"><span data-msgcom="true" data-msgid="textbox_id-10004">オプション</span></div>
+            </div>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+        <div class="l-sub-menu">
+          <div class="sub-button-border qa">
+            <a id="btn-qa" tabindex="0" href="javascript:void(0);" ref="./questionanswer.html" class="cursor" onclick="selectBtn(this);switchPage(this)" onfocus="focusMenu(this)" onblur="defocusMenu(this)" nx-se-disabled="" data-counter-id="4"></a>
+            <div class="sub-button-inner">
+              <div class="sub-button-text f-special"><span data-msgcom="true" data-msgid="textbox_id-10005"><al>Q&A</al></span></div>
+            </div>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-return">
+      <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="endApplet()" nx-se-disabled="">
+        <div class="return-button-border">
+          <div class="return-button-inner">
+            <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+          </div>
+        </div>
+        <div class="l-key-icon">
+          <div class="key-icon-border">
+            <div id="back-key" class="key-icon-inner"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="l-footer">
+      <div class="footer">
+        <p id="msg-edit-course" class="sub-message f-message is-hidden"><span data-msgid="textbox_id-2">パーツを組み合せて自分だけのコースづくり</span></p>
+        <p id="msg-world-course" class="sub-message f-message is-hidden"><span data-msgid="textbox_id-4">通信で世界中のコースにチャレンジ</span></p>
+        <p id="msg-course-robot" class="sub-message f-message is-hidden"><span data-msgid="textbox_id-5">コースをセーブ　コースであそぶ</span></p>
+        <p id="msg-option" class="sub-message f-message is-hidden"><span data-msgid="textbox_id-6">コースであそぶ時の設定を変える</span></p>
+        <p id="msg-qa" class="sub-message f-message is-hidden"><span data-msgid="textbox_id-7">お困りの場合はこちら</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/top.js"></script>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-7 --></body>
+
+</html>
