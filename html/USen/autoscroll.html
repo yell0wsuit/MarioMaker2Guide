@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/autoscroll.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/autoscroll_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button none">
+            <a id="btn-none" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button scroll-speed">
+            <a id="btn-scroll-speed" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button free">
+            <a id="btn-free" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper edit">
+        <div id="about-none" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-1">None</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">The course camera follows the player's movement.</span></div>
+          </div>
+        </div>
+        <div id="about-scroll-speed" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-3">Speed</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-4">You can select from three speed levels.</span></div>
+          </div>
+        </div>
+        <div id="about-free" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-5">Custom</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">Control the speed and direction of camera movement throughout the course.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+      <div class="l-character-footer-img">
+        <img id="yamamura-footer-img" class="yamamura-footer-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/hand.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="prev-scene-text"><span data-msgcom="true" data-msgid="textbox_id-10000">Course Maker</span></p>
+          <p class="triangle"><span data-msgcom="true" data-msgid="textbox_id-10006">&#9654;</span></p>
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10019">Autoscroll</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-6 --></body>
+
+</html>

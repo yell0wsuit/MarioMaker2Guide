@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/edit.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/edit_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button history">
+            <a id="btn-history" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keyfocus('btn-thema', 'down')" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button search">
+            <a id="btn-search" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./partssearch.html" nx-se-disabled="" data-counter-id="5"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button thema">
+            <a id="btn-thema" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button stage">
+            <a id="btn-stage" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button surface">
+            <a id="btn-surface" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button auto-scroll">
+            <a id="btn-auto-scroll" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./autoscroll.html" nx-se-disabled="" data-counter-id="6"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button custom-scroll">
+            <a id="btn-custom-scroll" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button timer">
+            <a id="btn-timer" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button goal-condition">
+            <a id="btn-goal-condition" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keySwitchPage(this)" ontouchstart="touchGotoDetail(this)" ref="./conditiongoal.html" nx-se-disabled="" data-counter-id="7"></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button coop">
+            <a id="btn-coop" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button afterimage">
+            <a id="btn-afterimage" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button main-menu">
+            <a id="btn-main-menu" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button save-load">
+            <a id="btn-save-load" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button otoasobi">
+            <a id="btn-otoasobi" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button eraser">
+            <a id="btn-eraser" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button undo">
+            <a id="btn-undo" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button rocket">
+            <a id="btn-rocket" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button play">
+            <a id="btn-play" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button start-goal-position">
+            <a id="btn-start-goal-position" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button start">
+            <a id="btn-start" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button current-position">
+            <a id="btn-current-position" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button goal">
+            <a id="btn-goal" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button area-switch">
+            <a id="btn-area-switch" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button course-direction">
+            <a id="btn-course-direction" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-to-detail">
+    <a id="to-detail" tabindex="-1" class="to-detail-wrapper" href="javascript:void(0);" onclick="gotoDetail(this)" ontouchstart="touchStartToDetail()" nx-se-disabled="">
+      <div id="to-detail-balloon" class="to-detail-balloon">
+        <div class="balloon-detail-border">
+          <div class="balloon-detail-inner">
+            <div class="balloon-triangle-border">
+              <div class="balloon-triangle-inner"></div>
+            </div>
+            <div class="detail-text f-message">
+              <div id="key-A" class="key-text"></div>
+              <div class="balloon-text"><span data-msgcom="true" data-msgid="textbox_id-10016">Coo...<br />(See more)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="character-img-wrapper">
+        <img id="yamamura-img" class="yamamura-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper edit">
+        <div id="about-otoasobi" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-37">Sound Effects</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-39">Switch to a mode that lets you add sound effects and animations to your<br />course. Press this again to be able to place parts again.</span></div>
+          </div>
+        </div>
+        <div id="about-history" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-1">Palette</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">Recently used parts are lined up here.
+Press and hold to lock parts so they won't be pushed out of the Palette.</span></div>
+          </div>
+        </div>
+        <div id="about-search" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10018">Looking for Parts</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-4">Browse the list of parts that can be placed in a course.</span></div>
+          </div>
+        </div>
+        <div id="about-thema" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-5">Game Style</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">You can choose one game style for your course.</span></div>
+          </div>
+        </div>
+        <div id="about-stage" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-7">Course Theme</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-8">You can choose one course theme per area and sub-area.</span></div>
+          </div>
+        </div>
+        <div id="about-surface" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-40">Water Level</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-41">Set the starting height by moving <img data-ms="true" class="description-img-water-default" src="../../img/water_default.webp" /> and the ending height by moving <img data-ms="true" class="description-img" src="../../img/watersurface.webp" />. <br />Select <img data-ms="true" class="description-img" src="../../img/water_up.webp" />/<img data-ms="true" class="description-img" src="../../img/water_down.webp" /> to turn it into <img data-ms="true" class="description-img" src="../../img/water_updown.webp" />, which will make the water level move up and <br />down repeatedly. Change the speed by pressing down on <img data-ms="true" class="description-img" src="../../img/water_up.webp" />/<img data-ms="true" class="description-img" src="../../img/water_down.webp" />/<img data-ms="true" class="description-img" src="../../img/water_updown.webp" />.</span></div>
+          </div>
+        </div>
+        <div id="about-auto-scroll" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10019">Autoscroll</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-12">Make your course scroll automatically.</span></div>
+          </div>
+        </div>
+        <div id="about-custom-scroll" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-42">Custom Scroll</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-43">By selecting Custom in Autoscroll, you can place <img data-ms="true" class="description-img" src="../../img/freeicon.webp" /> to change the scroll<br />direction, and you can set the speed between birds with <img data-ms="true" class="description-img" src="../../img/free_speed.webp" />.</span></div>
+          </div>
+        </div>
+        <div id="about-timer" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-9">Timer</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-10">Change the time limit of your course.</span></div>
+          </div>
+        </div>
+        <div id="about-goal-condition" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgcom="true" data-msgid="textbox_id-10020">Clear Condition</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-16">Set a condition players must meet to clear your course.</span></div>
+          </div>
+        </div>
+        <div id="about-coop" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-17">Co-op Making</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-18">Two people can make a course together. Each person needs one Joy-Con<br />held horizontally.</span></div>
+          </div>
+        </div>
+        <div id="about-afterimage" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-44">Mario's Trail</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-45">Press <img data-ms="true" class="description-img" src="../../img/icon_afterimage.webp" /> to show the route that Mario took during testing.</span></div>
+          </div>
+        </div>
+        <div id="about-play" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-19">Play</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-20">Quickly test the course you're making.
+Press and hold this to start from the beginning.
+While testing, press it once again to continue making.</span></div>
+          </div>
+        </div>
+        <div id="about-main-menu" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-21">Main Menu</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-22">Opens the main menu, where you can access other modes.</span></div>
+          </div>
+        </div>
+        <div id="about-save-load" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-23">Save/Load</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-24">Save or load courses.</span></div>
+          </div>
+        </div>
+        <div id="about-eraser" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-29">Erase</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-30">Erase selected parts.</span></div>
+          </div>
+        </div>
+        <div id="about-undo" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-31">Undo</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-32">Undo the previous action.</span></div>
+          </div>
+        </div>
+        <div id="about-rocket" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-13">Reset Rocket</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-14">Press and hold this to erase all of the parts placed in your course.</span></div>
+          </div>
+        </div>
+        <div id="about-start-goal-position" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-33">Start and Goal Positions</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-34">Change the height of the starting point and goal.
+The goal's position can be moved to the left and right.</span></div>
+          </div>
+        </div>
+        <div id="about-start" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-46">Start</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-47">Press <img data-ms="true" class="description-img-start" src="./img/icon_start.webp" /> to move the screen to the starting point.</span></div>
+          </div>
+        </div>
+        <div id="about-current-position" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-48">Screen Movement</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div>
+              <div class="description-text f-message"><span data-msgid="textbox_id-49">Move left and right with .</span></div>
+              <div class="description-attention f-message"><span data-msgid="textbox_id-56">＊For modes other than handheld mode, move left and right with  while pressing .</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="about-goal" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-50">Goal</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div>
+              <div class="description-text f-message"><span data-msgid="textbox_id-51">Press <img data-ms="true" class="description-img-goal" src="./img/icon_goal.webp" /> to move the screen to the goal. You can change the length of the<br />course by moving left and right while pressing <img data-ms="true" class="description-img-goal" src="./img/icon_goal.webp" />.</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="about-area-switch" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-52">Change Area</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-53">Switches between the main area with the goal and the sub-area accessible<br />via Warp Pipes.</span></div>
+          </div>
+        </div>
+        <div id="about-course-direction" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-54">Sub-area Orientation</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-55">Set the orientation of the sub-area to vertical or horizontal.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/hand.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10000">Course Maker</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-10022 --></body>
+
+</html>

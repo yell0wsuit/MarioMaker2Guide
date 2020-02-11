@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/courseoption.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/courseoption_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button control-option">
+            <a id="btn-control-option" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keyfocus('btn-character', 'right')" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button character">
+            <a id="btn-character" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button display-comment">
+            <a id="btn-display-comment" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button play-notification">
+            <a id="btn-play-notification" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button realtime-notification">
+            <a id="btn-realtime-notification" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button tag-lock">
+            <a id="btn-tag-lock" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button comment-lock">
+            <a id="btn-comment-lock" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper edit">
+        <div id="about-control-option" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-1">Player Controls</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">Change the assignment of the Dash and Jump buttons.</span></div>
+          </div>
+        </div>
+        <div id="about-character" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-3">Character</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div>
+              <div class="description-text f-message"><span data-msgid="textbox_id-4">Change the character you play as.</span></div>
+              <div class="description-attention f-message"><span data-msgid="textbox_id-15">＊Character settings will not be reflected in certain modes.</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="about-display-comment" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-5">Course Comments</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">Choose whether you want to view global or regional comments on courses.</span></div>
+          </div>
+        </div>
+        <div id="about-realtime-notification" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-7">Incoming Course Notifications</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-8">Choose whether or not to receive notifications when people play, like, or<br />comment on your uploaded courses.</span></div>
+          </div>
+        </div>
+        <div id="about-tag-lock" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-9">Tags for My Courses</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-10">Choose whether or not other players can change the tags of courses that<br />you've uploaded.</span></div>
+          </div>
+        </div>
+        <div id="about-play-notification" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-11">Outgoing Course Notifications</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-12">Choose whether other Makers are notified when you play, like, or comment on a course they made. This also includes notifications to players when you beat their world records.</span></div>
+          </div>
+        </div>
+        <div id="about-comment-lock" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-13">Comments on My Courses</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-14">Choose whether or not to allow users to comment on courses you've<br />uploaded.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/option.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10004">Settings</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-15 --></body>
+
+</html>

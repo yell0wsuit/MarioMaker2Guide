@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- ©Nintendo -->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no" />
+  <meta name="focus-ring-visibility" content="hidden" />
+  <link rel="stylesheet" href="../../css/common.css" />
+  <link id="font-stylesheet" rel="stylesheet" href="../../css/font.css" />
+  <link rel="stylesheet" href="../../css/abstract.css" />
+  <link rel="stylesheet" href="../../css/userinfo.css" />
+</head>
+
+<body>
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../js/wsnd.min.js"></script>
+  <script src="../../js/common.js"></script>
+  <script src="../../js/abstract.js"></script>
+  <div id="bg" class="l-bg">
+    <img src="../../img/bg_description.webp" class="bg-img" />
+  </div>
+  <div class="l-img-content">
+    <div class="l-panel">
+      <div class="panel-wrapper">
+        <img src="./img/userinfo_00.webp" class="panel-img" />
+        <div id="area-buttons" class="l-area-buttons">
+          <div class="area-button player-info">
+            <a id="btn-player-info" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button submitted-course">
+            <a id="btn-submitted-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button liked-course">
+            <a id="btn-liked-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button played-course">
+            <a id="btn-played-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button fastest-cleared-course">
+            <a id="btn-fastest-cleared-course" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button like-point">
+            <a id="btn-like-point" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button medal">
+            <a id="btn-medal" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button rate">
+            <a id="btn-rate" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" nx-se-disabled=""></a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+          <div class="area-button detail-info">
+            <a id="btn-detail-info" tabindex="0" class="cursor" href="javascript:void(0);" onfocus="focusBtn(this)" onkeydown="keyfocus('btn-like-point', 'right')" nx-se-disabled="">
+            </a>
+            <div class="cursor-elm cursor-tl"></div>
+            <div class="cursor-elm cursor-tr"></div>
+            <div class="cursor-elm cursor-bl"></div>
+            <div class="cursor-elm cursor-br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-description">
+    <div id="main-description" class="l-main-content is-hidden">
+      <div class="description-message-wrapper world-network">
+        <div id="about-player-info" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-1">Overview</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-2">A summary of your activity.</span></div>
+          </div>
+        </div>
+        <div id="about-submitted-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-3">Uploaded Courses</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-4">A list of courses you have uploaded.<br />Select a course to view its play information.</span></div>
+          </div>
+        </div>
+        <div id="about-liked-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-5">Liked Courses</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-6">A list of courses that you've liked in the past.<br />Select a course to play or download it.</span></div>
+          </div>
+        </div>
+        <div id="about-played-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-7">Played Courses</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-8">A list of courses you have played.</span></div>
+          </div>
+        </div>
+        <div id="about-fastest-cleared-course" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-9">World Records</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-10">A list of courses that you hold the world record on.<br />When someone else beats the record, it will disappear from this list.</span></div>
+          </div>
+        </div>
+        <div id="about-like-point" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-13">Maker points</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-14">These points increase as other players like the courses you've uploaded.</span></div>
+          </div>
+        </div>
+        <div id="about-medal" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-15">Medals</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-16">Rewards you have received for various accomplishments.</span></div>
+          </div>
+        </div>
+        <div id="about-rate" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-17">Versus Rating</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-18">Your Versus Rating rises and falls as you win and lose Multiplayer Versus<br />matches played in Network Play.</span></div>
+          </div>
+        </div>
+        <div id="about-detail-info" class="is-hidden">
+          <div class="description-title-wrapper">
+            <div class="description-title f-message"><span data-msgid="textbox_id-19">More Info</span></div>
+          </div>
+          <div class="description-text-wrapper">
+            <div class="description-text f-message"><span data-msgid="textbox_id-20">View information like User ID and play history.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-return">
+    <a id="ret-button" tabindex="-1" class="return-button-anchor" href="javascript:void(0);" onclick="back()" nx-se-disabled="">
+      <div class="return-button-border">
+        <div class="return-button-inner">
+          <img src="../../img/return_arrow.webp" class="return-arrow-img" />
+        </div>
+      </div>
+      <div class="l-key-icon">
+        <div class="key-icon-border">
+          <div id="back-key" class="key-icon-inner"></div>
+        </div>
+      </div>
+      <div class="l-character-footer-img">
+        <img id="yamamura-footer-img" class="yamamura-footer-img" />
+      </div>
+    </a>
+  </div>
+  <div class="l-footer">
+    <div class="l-breadcrumb-list">
+      <div class="breadcrumb-list-text-wrapper">
+        <img src="../../img/UFO.webp" class="breadcrumb-list-icon" />
+        <div class="f-special">
+          <p class="prev-scene-text"><span data-msgcom="true" data-msgid="textbox_id-10002">Course World</span></p>
+          <p class="triangle"><span data-msgcom="true" data-msgid="textbox_id-10006">&#9654;</span></p>
+          <p class="breadcrumb-list-text"><span data-msgcom="true" data-msgid="textbox_id-10008">Maker Profile</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/key.js"></script>
+<!-- textbox_id_counter-20 --></body>
+
+</html>
